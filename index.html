@@ -3,77 +3,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sara Sayyadi - Academic Website</title>
+  <title>Sara Sayyadi</title>
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
+    body, html {
       margin: 0;
+      padding: 0;
       font-family: sans-serif;
-      background-color: #f5f5f5;
     }
 
     header {
-      background-image: url("images/bg.jpg");
+      height: 100vh;
+      background-image: url('images/bg.jpg');
       background-size: cover;
       background-position: center;
-      height: 100vh;
+      background-attachment: fixed;
       color: white;
+      text-align: center;
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
-      text-align: center;
-      padding: 20px;
+      align-items: center;
     }
 
     header img {
-      width: 180px;
+      width: 160px;
       border-radius: 50%;
-      margin-bottom: 20px;
       border: 4px solid white;
+      margin-bottom: 20px;
     }
 
     header h1 {
-      font-size: 2.5em;
-      margin: 0;
+      font-size: 2.8em;
+      margin: 10px 0 5px;
     }
 
     header p {
-      font-size: 1.1em;
-      margin: 5px 0;
+      font-size: 1.2em;
+      margin: 0;
     }
 
-    main {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    section {
-      margin-bottom: 40px;
-    }
-
-    section h2 {
-      color: #444;
-      border-bottom: 2px solid #eee;
-      padding-bottom: 5px;
-    }
-
-    footer {
+    nav {
+      background: #222;
+      padding: 12px 0;
       text-align: center;
-      padding: 20px;
-      color: #777;
-      font-size: 0.9em;
     }
 
-    a {
-      color: #007acc;
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -82,49 +66,17 @@
   <header>
     <img src="images/sara.jpg" alt="Sara Sayyadi">
     <h1>Sara Sayyadi</h1>
-    <p><strong>Environmental Geophysicist</strong><br>University of Nevada, Reno</p>
-    <p>Email: <a href="mailto:ssayyadi@unr.edu" style="color:white;">ssayyadi@unr.edu</a> | 
-       <a href="https://www.linkedin.com/in/sara-sayyadi/" target="_blank" style="color:white;">LinkedIn</a></p>
+    <p><strong>Postdoctoral Researcher at CTEMP @ University of Nevada, Reno</strong></p>
+    <p>Exploration Geophysicist | DAS · Gravimetry · Seismology · Geomagnetics</p>
   </header>
 
-  <main>
-    <section>
-      <h2>Current Projects</h2>
-      <ul>
-        <li>Seismic Hazard Assessment in the Reno-Fernley Corridor using DAS, Nodal, and Gravity-Based methods.</li>
-        <li>Long-term DAS experiment at UNR Farm: studying environmental and installation effects on DAS coupling.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2><a href="fieldwork.html" style="text-decoration:none; color:#333;">Field Work</a></h2>
-      <p><a href="fieldwork.html">Click here to view fieldwork photos &raquo;</a></p>
-    </section>
-
-    <section>
-      <h2>Teaching Experience</h2>
-      <ul>
-        <li>Teaching Assistant and Field Mentor, University of Nevada</li>
-        <li>Primary Instructor, Geophysical Exploration – University of Iceland</li>
-        <li>Instructor, Physics II Lab – Azad University, Iran</li>
-        <li>Workshop Organizer & Instructor: CTEMPs DAS/DTS trainings (2024)</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Selected Publications</h2>
-      <ul>
-        <li><strong>2024</strong> – Internal structure of the volcanic island of Surtsey, <i>JVGR</i>. <a href="https://doi.org/10.1016/j.jvolgeores.2024.108096">Link</a></li>
-        <li><strong>2023</strong> – PhD Thesis on Surtsey island formation. <a href="https://hdl.handle.net/20.500.11815/4163">Link</a></li>
-        <li><strong>2021</strong> – Seismic activity of the 1963–67 Surtsey eruption, <i>Bull Volcanol</i>. <a href="https://doi.org/10.1007/s00445-021-01481-0">Link</a></li>
-      </ul>
-    </section>
-  </main>
-
-  <footer>
-    &copy; 2025 Sara Sayyadi
-  </footer>
+  <nav>
+    <a href="projects.html" target="_blank">Projects</a>
+    <a href="teaching.html" target="_blank">Teaching</a>
+    <a href="fieldwork.html" target="_blank">Field Work</a>
+    <a href="collaboration.html" target="_blank">Collaboration</a>
+    <a href="cv.html" target="_blank">CV</a>
+  </nav>
 
 </body>
 </html>
-
