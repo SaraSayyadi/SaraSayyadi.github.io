@@ -5,47 +5,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sara Sayyadi - Academic Website</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: sans-serif;
+      background-color: #f5f5f5;
     }
 
     header {
       background-image: url("images/bg.jpg");
       background-size: cover;
       background-position: center;
-      height: 100vh; /* full screen height */
+      height: 100vh;
+      color: white;
       display: flex;
       flex-direction: column;
+      align-items: center;
       justify-content: center;
-      padding: 40px;
-      color: white;
+      text-align: center;
+      padding: 20px;
     }
 
     header img {
-      width: 200px;
+      width: 180px;
       border-radius: 50%;
       margin-bottom: 20px;
+      border: 4px solid white;
     }
 
     header h1 {
       font-size: 2.5em;
-      margin-bottom: 0;
+      margin: 0;
     }
 
     header p {
-      font-size: 1.2em;
+      font-size: 1.1em;
       margin: 5px 0;
     }
 
-    section, footer {
+    main {
       max-width: 900px;
       margin: 40px auto;
       padding: 0 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    section h2 {
+      color: #444;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #777;
+      font-size: 0.9em;
     }
 
     a {
-      color: lightblue;
+      color: #007acc;
     }
   </style>
 </head>
@@ -55,47 +83,48 @@
     <img src="images/sara.jpg" alt="Sara Sayyadi">
     <h1>Sara Sayyadi</h1>
     <p><strong>Environmental Geophysicist</strong><br>University of Nevada, Reno</p>
-    <p>Email: <a href="mailto:ssayyadi@unr.edu">ssayyadi@unr.edu</a> |
-       <a href="https://www.linkedin.com/in/sara-sayyadi/" target="_blank">LinkedIn</a></p>
+    <p>Email: <a href="mailto:ssayyadi@unr.edu" style="color:white;">ssayyadi@unr.edu</a> | 
+       <a href="https://www.linkedin.com/in/sara-sayyadi/" target="_blank" style="color:white;">LinkedIn</a></p>
   </header>
 
-  <section>
-    <h2>Current Projects</h2>
-    <ul>
-      <li>Seismic Hazard Assessment in the Reno-Fernley Corridor using DAS, Nodal, and Gravity-Based methods.</li>
-      <li>Long-term DAS experiment at UNR Farm: studying environmental and installation effects on DAS coupling.</li>
-    </ul>
-  </section>
+  <main>
+    <section>
+      <h2>Current Projects</h2>
+      <ul>
+        <li>Seismic Hazard Assessment in the Reno-Fernley Corridor using DAS, Nodal, and Gravity-Based methods.</li>
+        <li>Long-term DAS experiment at UNR Farm: studying environmental and installation effects on DAS coupling.</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2><a href="fieldwork.html" style="text-decoration:none; color:black;">Field Work</a></h2>
-    <p><a href="fieldwork.html">Click here to view fieldwork photos &raquo;</a></p>
-  </section>
+    <section>
+      <h2><a href="fieldwork.html" style="text-decoration:none; color:#333;">Field Work</a></h2>
+      <p><a href="fieldwork.html">Click here to view fieldwork photos &raquo;</a></p>
+    </section>
 
-  <section>
-    <h2>Teaching Experience</h2>
-    <ul>
-      <li>Teaching Assistant and Field Mentor, University of Nevada</li>
-      <li>Primary Instructor, Geophysical Exploration – University of Iceland</li>
-      <li>Instructor, Physics II Lab – Azad University, Iran</li>
-      <li>Workshop Organizer & Instructor: CTEMPs DAS/DTS trainings (2024)</li>
-    </ul>
-  </section>
+    <section>
+      <h2>Teaching Experience</h2>
+      <ul>
+        <li>Teaching Assistant and Field Mentor, University of Nevada</li>
+        <li>Primary Instructor, Geophysical Exploration – University of Iceland</li>
+        <li>Instructor, Physics II Lab – Azad University, Iran</li>
+        <li>Workshop Organizer & Instructor: CTEMPs DAS/DTS trainings (2024)</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>Selected Publications</h2>
-    <ul>
-      <li><strong>2024</strong> – Internal structure of the volcanic island of Surtsey, <i>JVGR</i>. <a href="https://doi.org/10.1016/j.jvolgeores.2024.108096">Link</a></li>
-      <li><strong>2023</strong> – PhD Thesis on Surtsey island formation. <a href="https://hdl.handle.net/20.500.11815/4163">Link</a></li>
-      <li><strong>2021</strong> – Seismic activity of the 1963–67 Surtsey eruption, <i>Bull Volcanol</i>. <a href="https://doi.org/10.1007/s00445-021-01481-0">Link</a></li>
-    </ul>
-    <p>See full publication list in CV or on <a href="https://www.linkedin.com/in/sara-sayyadi/">LinkedIn</a>.</p>
-  </section>
+    <section>
+      <h2>Selected Publications</h2>
+      <ul>
+        <li><strong>2024</strong> – Internal structure of the volcanic island of Surtsey, <i>JVGR</i>. <a href="https://doi.org/10.1016/j.jvolgeores.2024.108096">Link</a></li>
+        <li><strong>2023</strong> – PhD Thesis on Surtsey island formation. <a href="https://hdl.handle.net/20.500.11815/4163">Link</a></li>
+        <li><strong>2021</strong> – Seismic activity of the 1963–67 Surtsey eruption, <i>Bull Volcanol</i>. <a href="https://doi.org/10.1007/s00445-021-01481-0">Link</a></li>
+      </ul>
+    </section>
+  </main>
 
   <footer>
-    <hr>
-    <p style="text-align: center;">&copy; 2025 Sara Sayyadi</p>
+    &copy; 2025 Sara Sayyadi
   </footer>
 
 </body>
 </html>
+
