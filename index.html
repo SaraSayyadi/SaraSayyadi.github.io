@@ -6,31 +6,57 @@
   <title>Sara Sayyadi - Academic Website</title>
   <style>
     body {
+      margin: 0;
       font-family: sans-serif;
+    }
+
+    header {
+      background-image: url("images/bg.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 100vh; /* full screen height */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 40px;
+      color: white;
+    }
+
+    header img {
+      width: 200px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 0;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin: 5px 0;
+    }
+
+    section, footer {
       max-width: 900px;
       margin: 40px auto;
       padding: 0 20px;
-      background-image: url("images/bg.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-position: center;
     }
-    header {
-      text-align: left;
+
+    a {
+      color: lightblue;
     }
   </style>
 </head>
 <body>
 
   <header>
+    <img src="images/sara.jpg" alt="Sara Sayyadi">
     <h1>Sara Sayyadi</h1>
-    <img src="images/sara.jpg" alt="Sara Sayyadi" width="200"
-         style="border-radius: 50%; margin-top: 10px; margin-bottom: 10px;">
-    <p><strong>Environmental Geophysicist</strong><br> University of Nevada, Reno</p>
-    <p>Email: <a href="mailto:ssayyadi@unr.edu">ssayyadi@unr.edu</a> | 
+    <p><strong>Environmental Geophysicist</strong><br>University of Nevada, Reno</p>
+    <p>Email: <a href="mailto:ssayyadi@unr.edu">ssayyadi@unr.edu</a> |
        <a href="https://www.linkedin.com/in/sara-sayyadi/" target="_blank">LinkedIn</a></p>
-    <hr>
   </header>
 
   <section>
@@ -68,7 +94,7 @@
 
   <footer>
     <hr>
-    <p>&copy; 2025 Sara Sayyadi</p>
+    <p style="text-align: center;">&copy; 2025 Sara Sayyadi</p>
   </footer>
 
 </body>
